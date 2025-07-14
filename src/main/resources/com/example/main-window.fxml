@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.MainWindowController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="393.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="130.0" prefWidth="191.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="231.0" text="Chose Method:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="methodBox" prefHeight="31.0" prefWidth="171.0" promptText="Choose Method">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Label prefHeight="31.0" prefWidth="231.0" text="Chose Function:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="5.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <ComboBox fx:id="functionBox" prefHeight="31.0" prefWidth="171.0" promptText="Choose Function">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="130.0" prefWidth="181.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="231.0" text="Set Borders:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="38.0" prefWidth="180.0">
+                           <children>
+                              <TextField alignment="TOP_CENTER" prefHeight="25.0" prefWidth="51.0" text="-5" fx:id="xMin">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="26.0" prefWidth="45.0" text="&lt; X &lt;" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField alignment="TOP_CENTER" prefHeight="25.0" prefWidth="51.0" text="5" fx:id="xMax" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="38.0" prefWidth="180.0">
+                           <children>
+                              <TextField fx:id="yMin" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="51.0" text="-5">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="26.0" prefWidth="45.0" text="&lt; Y &lt;" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="yMax" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="51.0" text="5" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="parameterLabel" prefHeight="31.0" prefWidth="231.0" text="Set Method parameters:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox fx:id="alfaBox" prefHeight="8.0" prefWidth="369.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="53.0" text="Alfa = " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="alfaField" prefHeight="56.0" prefWidth="149.0" text="0.5" />
+               </children>
+            </HBox>
+            <HBox fx:id="muBox" prefHeight="8.0" prefWidth="369.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="53.0" text="Mu = " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="muField" prefHeight="56.0" prefWidth="149.0" text="0.5" />
+               </children>
+            </HBox>
+            <HBox fx:id="epsBox" prefHeight="8.0" prefWidth="369.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="53.0" text="Eps = " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="epsField" prefHeight="56.0" prefWidth="149.0" text="0.001" />
+               </children>
+            </HBox>
+            <HBox fx:id="iterBox" prefHeight="8.0" prefWidth="369.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="53.0" text="Iter = " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="iterField" prefHeight="56.0" prefWidth="149.0" text="100" />
+               </children>
+            </HBox>
+            <HBox fx:id="startPointBox" prefHeight="8.0" prefWidth="369.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="99.0" text="Start Point: " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="34.0" text="x = " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="27.0" prefWidth="40.0" text="0" fx:id="xField" />
+                  <Label prefHeight="27.0" prefWidth="35.0" text="y = " textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="yField" prefHeight="27.0" prefWidth="40.0" text="0" />
+               </children>
+            </HBox>
+            <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="339.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#showContours" prefHeight="25.0" prefWidth="190.0" text="Show Contours" />
+                  <Button mnemonicParsing="false" onAction="#runMethod" prefHeight="25.0" prefWidth="190.0" text="Run Method" textAlignment="CENTER" />
+              </buttons>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </ButtonBar>
+            <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="39.0" prefWidth="369.0">
+               <buttons>
+                  <Button mnemonicParsing="false" onAction="#showWay" prefHeight="25.0" prefWidth="190.0" text="Show Method Progress" />
+                  <Button mnemonicParsing="false" onAction="#showGraph" prefHeight="25.0" prefWidth="190.0" text="Show Graph" />
+               </buttons>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="254.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="231.0" text="Results:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="resultsTextArea" editable="false" prefHeight="377.0" prefWidth="231.0" wrapText="true" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
